@@ -62,43 +62,30 @@ namespace MaskingRule.Database
 
         void LoadRules()
         {
-            _dbCache = BuildDbCaches(_connection.Table<DbMaskingRule>()).ToDictionary(db => db.Name);
+            var dbRules = _connection.Query<DbMaskingRule>("SELECT * FROM masking_rule WHERE is_used == 1 AND is_deleted == 0");
 
-            IEnumerable<DbCache> BuildDbCaches(IEnumerable<DbMaskingRule> rules)
-            {
-                return rules
-                    .GroupBy(r => r.DatabaseName)
-                    .Select(dbGroup =>
-                    {
-                        var db = new DbCache(dbGroup.Key);
-                        db.AddRange(BuildTableCaches(dbGroup));
-                        return db;
-                    });
-            }
+            _dbCache = BuildDbCaches(dbRules).ToDictionary(x => x.Name);
+        }
 
-            IEnumerable<DbTableCache> BuildTableCaches(IGrouping<string, DbMaskingRule> group)
-            {
-                return group
-                    .GroupBy(r => r.TableName)
-                    .Select(tableGroup =>
-                    {
-                        var table = new DbTableCache(tableGroup.Key);
-                        table.AddRange(BuildColumnCaches(tableGroup));
-                        return table;
-                    });
-            }
+        IEnumerable<DbCache> BuildDbCaches(IEnumerable<DbMaskingRule> source)
+        {
+            return from x in source
+                   group x by x.DatabaseName into g
+                   select new DbCache(g.Key, BuildTableCaches(g));
+        }
 
-            IEnumerable<DbColumnCache> BuildColumnCaches(IGrouping<string, DbMaskingRule> group)
-            {
-                return group
-                    .GroupBy(r => r.ColumnName)
-                    .Select(columnGroup =>
-                    {
-                        var column = new DbColumnCache(columnGroup.Key);
-                        column.AddRange(columnGroup);
-                        return column;
-                    });
-            }
+        IEnumerable<DbTableCache> BuildTableCaches(IGrouping<string, DbMaskingRule> source)
+        {
+            return from x in source
+                   group x by x.TableName into g
+                   select new DbTableCache(g.Key, BuildColumnCaches(g));
+        }
+
+        IEnumerable<DbColumnCache> BuildColumnCaches(IGrouping<string, DbMaskingRule> source)
+        {
+            return from x in source
+                   group x by x.ColumnName into g
+                   select new DbColumnCache(g.Key, g);
         }
 
         public IEnumerable<DbCache> GetDatabaseCaches()

@@ -16,6 +16,11 @@ namespace MaskingRule.Database.Cache
             _cache = new Dictionary<string, T>();
         }
 
+        public NamedCache(string name, IEnumerable<T> items) : this(name)
+        {
+            AddRange(items);
+        }
+
         public void Add(T item)
         {
             _cache[item.Name] = item;

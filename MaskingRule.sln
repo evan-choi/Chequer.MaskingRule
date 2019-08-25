@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.29209.62
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MaskingRule", "MaskingRule\MaskingRule.csproj", "{93D36470-C26F-4477-9ED4-F72AEC84A017}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaskingRule.UnitTest", "MaskingRule.UnitTest\MaskingRule.UnitTest.csproj", "{44BD9443-22D9-4E38-9076-E3D1F63CACA2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MaskingRule.UnitTest", "MaskingRule.UnitTest\MaskingRule.UnitTest.csproj", "{44BD9443-22D9-4E38-9076-E3D1F63CACA2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaskingRule.Test", "MaskingRule.Test\MaskingRule.Test.csproj", "{246CB647-5943-4C52-A7CD-11C265781140}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{44BD9443-22D9-4E38-9076-E3D1F63CACA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{44BD9443-22D9-4E38-9076-E3D1F63CACA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{44BD9443-22D9-4E38-9076-E3D1F63CACA2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{246CB647-5943-4C52-A7CD-11C265781140}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{246CB647-5943-4C52-A7CD-11C265781140}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{246CB647-5943-4C52-A7CD-11C265781140}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{246CB647-5943-4C52-A7CD-11C265781140}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
