@@ -16,3 +16,9 @@
 데이터: 200만개 (2 Colums x 100만 Rows)
 
 ![Preview](https://github.com/SteaI/Chequer.MaskingRule/blob/master/Result/Result.png?raw=true)
+
+### MaskingRule ClassDiagram
+![MaskingRule](https://github.com/SteaI/Chequer.MaskingRule/blob/master/Result/MaskingRule%20ClassDiagram.png?raw=true)
+
+### Database ClassDiagram
+![Database](https://github.com/SteaI/Chequer.MaskingRule/blob/master/Result/Database%20ClassDiagram.png?raw=true)
