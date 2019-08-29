@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="MaskingRule.Database.Cache.DbCache" Collapsed="true">
+    <Position X="3.25" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Database\Cache\DbCache.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MaskingRule.Database.Cache.DbColumnCache" Collapsed="true">
+    <Position X="7.75" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Database\Cache\DbColumnCache.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MaskingRule.Database.Cache.DbTableCache" Collapsed="true">
+    <Position X="5.5" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Database\Cache\DbTableCache.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MaskingRule.Database.Cache.NamedCache&lt;T&gt;" Collapsed="true">
+    <Position X="5.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAIAAAAAAIAAABAAAAAABAQAAAAAAAAEAAAAAAAEAAA=</HashCode>
+      <FileName>Database\Cache\NamedCache.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="MaskingRule.Database.Models.DbMaskingRule" BaseTypeListCollapsed="true">
+    <Position X="5.5" Y="6.75" Width="1.5" />
+    <Members>
+      <Field Name="_type" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>BAACAAAAAAAgAAQEAABAAAQAAAAABAAAAQAAAQABAAA=</HashCode>
+      <FileName>Database\Models\DbMaskingRule.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Type" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="MaskingRule.Database.MaskingRuleDB">
+    <Position X="3" Y="6.75" Width="2" />
+    <Members>
+      <Field Name="_connection" Hidden="true" />
+      <Field Name="_instance" Hidden="true" />
+      <Method Name="BuildColumnCaches" Hidden="true" />
+      <Method Name="BuildDbCaches" Hidden="true" />
+      <Method Name="BuildTableCaches" Hidden="true" />
+      <Method Name="CreateDummyRules" Hidden="true" />
+      <Method Name="LoadRules" Hidden="true" />
+      <Method Name="MaskingRuleDB" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAMAAAAEQAADIBABAAEAAAAACAAAAAAQAAAAAAABAA=</HashCode>
+      <FileName>Database\MaskingRuleDB.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="_dbCache" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Interface Name="MaskingRule.Database.Cache.INamedCache" Collapsed="true">
+    <Position X="5.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Database\Cache\INamedCache.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="MaskingRule.Data.MaskingType">
+    <Position X="7.75" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAADAAQQAAABAAAAQAAAAAkACAAAAAIAAAAAA=</HashCode>
+      <FileName>Data\MaskingType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="맑은 고딕" Size="9" />
+</ClassDiagram>

@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="MaskingRule.Data.Rules.CardnoMaskingRule" Collapsed="true">
+    <Position X="1.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAA=</HashCode>
+      <FileName>Data\Rules\CardnoMaskingRule.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MaskingRule.Data.Rules.DriverMaskingRule" Collapsed="true">
+    <Position X="13.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAA=</HashCode>
+      <FileName>Data\Rules\DriverMaskingRule.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MaskingRule.Data.Rules.EmailMaskingRule" Collapsed="true">
+    <Position X="12" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAACAAAA=</HashCode>
+      <FileName>Data\Rules\EmailMaskingRule.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MaskingRule.Data.Rules.MobileMaskingRule" Collapsed="true">
+    <Position X="6.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAA=</HashCode>
+      <FileName>Data\Rules\MobileMaskingRule.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MaskingRule.Data.Rules.NameMaskingRule" Collapsed="true">
+    <Position X="8.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAEAEAA=</HashCode>
+      <FileName>Data\Rules\NameMaskingRule.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MaskingRule.Data.Rules.PassportMaskingRule" Collapsed="true">
+    <Position X="10.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAA=</HashCode>
+      <FileName>Data\Rules\PassportMaskingRule.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MaskingRule.Data.Rules.PhoneMaskingRule" Collapsed="true">
+    <Position X="3.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAA=</HashCode>
+      <FileName>Data\Rules\PhoneMaskingRule.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MaskingRule.Data.Rules.RegnoMaskingRule" Collapsed="true">
+    <Position X="5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAIACAAAAAA=</HashCode>
+      <FileName>Data\Rules\RegnoMaskingRule.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MaskingRule.Data.Common.MaskingRule&lt;T&gt;" Collapsed="true">
+    <Position X="7.5" Y="4" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAEAAAAAAAAA=</HashCode>
+      <FileName>Data\Common\MaskingRule.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="MaskingRule.Data.Common.StringMaskingRule" Collapsed="true">
+    <Position X="7.5" Y="5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAABAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Data\Common\StringMaskingRule.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MaskingRule.Data.MaskingRuleFactory">
+    <Position X="7.25" Y="7.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAAAAAAAAABAAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>Data\MaskingRuleFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="MaskingRule.Data.IMaskingRule" Collapsed="true">
+    <Position X="7.5" Y="3" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Data\IMaskingRule.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="MaskingRule.Data.MaskingType">
+    <Position X="10" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAADAAQQAAABAAAAQAAAAAkACAAAAAIAAAAAA=</HashCode>
+      <FileName>Data\MaskingType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="맑은 고딕" Size="9" />
+</ClassDiagram>
