@@ -10,3 +10,9 @@
 ### MaskingRule.UnitTest
 
 각 마스킹 클래스에대한 단위 테스트가 구현되어 있습니다.
+
+### 테스트 결과
+
+데이터: 200만개 (2 Colums x 100만 Rows)
+
+![Preview](https://github.com/SteaI/Chequer.MaskingRule/blob/master/Result/Result.png?raw=true)
