@@ -1,0 +1,12 @@
+### MaskingRule
+
+데이터 마스킹을 위한 클래스가 구현되어 있습니다.
+
+### MaskingRule.Test
+
+[MaskingRuleFactory](https://github.com/SteaI/Chequer.MaskingRule/blob/master/MaskingRule/Data/MaskingRuleFactory.cs)와 [MaskingRuleDB](https://github.com/SteaI/Chequer.MaskingRule/blob/master/MaskingRule/Database/MaskingRuleDB.cs)
+를 이용하여 ResultSet에 대한 데이터 마스킹이 구현되어 있습니다.
+
+### MaskingRule.UnitTest
+
+각 마스킹 클래스에대한 단위 테스트가 구현되어 있습니다.
