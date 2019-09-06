@@ -12,10 +12,10 @@ namespace MaskingRule.UnitTest
         {
             IMaskingRule rule = MaskingRuleFactory.Create(MaskingType.Name);
 
-            Test(rule, "ÃÖÁø¿ë", "ÃÖ*¿ë");
-            Test(rule, "Áø¿ë", "Áø*");
-            Test(rule, "ÀÌ¸§³×ÀÚ", "ÀÌ**ÀÚ");
-            Test(rule, "³×±ÛÀÚÀÌ»ó", "³×***»ó");
+            Test(rule, "ìµœì§„ìš©", "ìµœ*ìš©");
+            Test(rule, "ì§„ìš©", "ì§„*");
+            Test(rule, "ì´ë¦„ë„¤ì", "ì´**ì");
+            Test(rule, "ë„¤ê¸€ìì´ìƒ", "ë„¤***ìƒ");
 
             Test(rule, "ChoiJinYong", "Choi*******");
         }
@@ -25,12 +25,12 @@ namespace MaskingRule.UnitTest
         {
             var rule = MaskingRuleFactory.Create(MaskingType.Regno);
 
-            // Á¤Ã¥ 1
+            // ì •ì±… 1
 
             Test(rule, "850101-1234567", "850101-*******");
             Test(rule, "850101 2345678", "850101 *******");
 
-            // Á¤Ã¥ 2
+            // ì •ì±… 2
 
             rule = MaskingRuleFactory.Create(MaskingType.RegnoGender);
 
@@ -64,12 +64,12 @@ namespace MaskingRule.UnitTest
         {
             var rule = MaskingRuleFactory.Create(MaskingType.Email);
 
-            // Á¤Ã¥ 1
+            // ì •ì±… 1
 
             Test(rule, "godhoop@gmail.com", "*******@*****.com");
             Test(rule, "develope_e@naver.com", "**********@*****.com");
 
-            // Á¤Ã¥ 2
+            // ì •ì±… 2
 
             rule = MaskingRuleFactory.Create(MaskingType.EmailDomain);
 

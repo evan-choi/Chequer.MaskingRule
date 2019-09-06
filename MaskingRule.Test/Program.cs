@@ -67,14 +67,14 @@ namespace MaskingRule.Test
         {
             var resultSet = new object[rowCount][];
 
-            for (int r = 0; r < resultSet.Length; r++)
+            Parallel.For(0, rowCount, r =>
             {
                 resultSet[r] = new object[]
                 {
                     CreateRandomName(),
                     CreateRandomPhone()
                 };
-            }
+            });
 
             return resultSet;
         }
